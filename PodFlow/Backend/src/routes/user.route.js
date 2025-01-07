@@ -13,7 +13,7 @@ router.route('/logout').post(logoutUser)
 
 router.route('/checkcookie').get(checkCookies)
 
-router.route('/user').post(verifyJWT,getUserDetails);
+router.route('/userinfo').get(verifyJWT,getUserDetails);
 
 
 export default router;

@@ -17,13 +17,13 @@ podcastRouter.route('/addpodcast').post(upload.fields([
     }
 ]), verifyJWT, addPodcast)
 
-podcastRouter.route('/getpodcast').post(getPodcast)
+podcastRouter.route('/getpodcast').get(getPodcast)
 
-podcastRouter.route('/getUserPodcasts').post(verifyJWT, userPodcast)
+podcastRouter.route('/getUserPodcasts').get(verifyJWT, userPodcast)
 
-podcastRouter.route('/getPodcast/:id').post(podcastById);
+podcastRouter.route('/getPodcast/:id').get(podcastById);
 
-podcastRouter.route('/category/:cat').post(podcastByCategory);
+podcastRouter.route('/category/:cat').get(podcastByCategory);
 
 
 

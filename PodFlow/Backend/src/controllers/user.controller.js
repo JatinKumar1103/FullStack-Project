@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken'
 
 const options = {
     httpOnly :true,
-    secure :true,
+    secure :true,   
 }
 
 const generateAccessToken = async(userId) => {
@@ -24,7 +24,7 @@ const registerUser = aysncHandler(async (req,res) => {
     
 
    if([username, email, password].some((field)=> field?.trim() ==="")){
-    throw new ApiError('400', "All fields are required");
+    throw new ApiError(400, "All fields are required");
    }
    if(username.length < 5){
     throw new ApiError(400, "Username must be at least 5 characters")
@@ -101,7 +101,7 @@ const loginUser = aysncHandler(async (req,res) => {
 })
 
 const logoutUser = aysncHandler(async(req,res)=>{
-    res.clearCookie("accessToken",options)
+    res.clearCookie("accessToken",options);
 
     return res
     .status(200)
