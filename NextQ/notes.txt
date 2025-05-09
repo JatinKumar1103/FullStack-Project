@@ -1,0 +1,3 @@
+in phase 1:
+i think defination of feature is done 
+stack i want to choose is reactjs for frontend and for backend i want to use nodejs and express and for database i will use mongodb you have written with orm what does it mean or it is different from normal mongodb, for auth jwt is good , api is done , state management for redux for ui acternity ui library i want to use and stylling talwind css 

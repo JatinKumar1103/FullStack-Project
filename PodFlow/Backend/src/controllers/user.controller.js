@@ -85,7 +85,7 @@ const loginUser = aysncHandler(async (req,res) => {
     }
     const {accessToken} = await generateAccessToken(user._id)
 
-    const loggedInUser = await User.findById(user._id).select(    "-password")
+    const loggedInUser = await User.findById(user._id).select("-password")
 
     return res
     .status(200)
