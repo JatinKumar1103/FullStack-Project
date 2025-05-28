@@ -11,7 +11,7 @@ connectDB()
 .then(()=>{
     const PORT : number = parseInt(process.env.PORT || "3000",10)
     app.listen(PORT,()=>{
-        console.log(`Server is running at ${process.env.PORT}`)
+        console.log(`Server is running at ${PORT}`)
     })
 })
 .catch((err)=>{
