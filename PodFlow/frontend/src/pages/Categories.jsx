@@ -7,31 +7,31 @@ const Categories = () => {
       name: "Comedy",
       color: "bg-purple-200",
       to: "/categories/Comedy",
-      img: "https://static-assets-web.flixcart.com/www/linchpin/batman-returns/images/fk-default-image-75ff340b.png?q=90",
+      img: "/public/—Pngtree—a laughing face emoji with_20428209.png",
     },
     {
       name: "Business",
       color: "bg-green-200",
       to: "/categories/Business",
-      img: "https://static-assets-web.flixcart.com/www/linchpin/batman-returns/images/fk-default-image-75ff340b.png?q=90",
+      img: "/public/—Pngtree—massive pile of hundred-dollar bills_20393004.png",
     },
     {
       name: "Education",
       color: "bg-red-200",
       to: "/categories/Education",
-      img: "https://static-assets-web.flixcart.com/www/linchpin/batman-returns/images/fk-default-image-75ff340b.png?q=90",
+      img: "/public/stack-of-books.png",
     },
     {
       name: "Hobbies",
       color: "bg-zinc-200",
       to: "/categories/Hobbies",
-      img: "https://img.favpng.com/11/24/17/happy-face-emoji-png-favpng-tBiqyyXAH6UwfAKEnkTwucnX8.jpg",
+      img: "/public/activity.png",
     },
     {
       name: "Government",
       color: "bg-indigo-200",
       to: "/categories/Government",
-      img: "https://static-assets-web.flixcart.com/www/linchpin/batman-returns/images/fk-default-image-75ff340b.png?q=90",
+      img: "/public/embassy.png",
     },
   ];
   return (
@@ -48,7 +48,7 @@ const Categories = () => {
               <img
                 src={items.img}
                 alt="category"
-                className="rounded rotate-12 h-[15vh] md:h-[17vh] lg:h-[18vh]"
+                className="rounded rotate-12 h-[15vh] md:h-[17vh] lg:h-[18vh] "
               />
             </div>
           </Link>

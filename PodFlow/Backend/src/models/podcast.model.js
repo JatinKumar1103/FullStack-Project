@@ -5,22 +5,22 @@ const podcastSchema = new Schema(
         frontImage:{
             type:String,
             required:true,
-            unique:true
+            // unique:true
         },
         audioFile:{
             type:String,
             required:true,
-            unique:true
+            // unique:true
         },
         title:{
             type:String,
             required:true,
-            unique:true
+            // unique:true
         },
         description:{
             type:String,
             required:true,
-            unique:true
+            // unique:true
         },
         user:{
             type:Schema.Types.ObjectId,
