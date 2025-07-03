@@ -5,6 +5,6 @@ import { assignAdmin } from "../controllers/admin.controller.js";
 
 const router = Router();
 
-router.route('/assign').post(verifyJWT,verifyAdmin,assignAdmin)
+router.route('/assign').post(verifyJWT, verifyAdmin,assignAdmin)
 
 export default router;

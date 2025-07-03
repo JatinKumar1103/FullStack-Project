@@ -9,7 +9,7 @@ interface AuthRequest extends Request {
     user?: any; 
   }
 
-const verifyAdmin = asyncHandler(async(req:AuthRequest,res,next)=>{
+export const verifyAdmin = asyncHandler(async(req:AuthRequest,res,next)=>{
     
     const userId = req.user._id;
     const admin = await Admin.findOne({userId});
@@ -22,7 +22,7 @@ const verifyAdmin = asyncHandler(async(req:AuthRequest,res,next)=>{
     next();
 })
 
-const verifySuperAdmin = asyncHandler(async(req:AuthRequest, res:Response, next)=>{
+export const verifySuperAdmin = asyncHandler(async(req:AuthRequest, res:Response, next)=>{
     const userId = req.user._id;
     const admin = await Admin.findOne({userId});
 

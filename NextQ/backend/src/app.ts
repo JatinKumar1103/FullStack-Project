@@ -33,4 +33,10 @@ app.use('/api/v1/user/profile',profileRouter);
 import adminRouter from './routes/admin.routes.js'
 app.use('/api/v1/admin',adminRouter)
 
+// Health Check Endpoint for server status 
+app.get("/healthCheck", (req, res) => {
+    console.log("Server is running perfectly...");
+    res.send("Server is running perfectly...");
+})
+
 export {app}
